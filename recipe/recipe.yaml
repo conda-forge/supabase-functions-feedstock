@@ -1,6 +1,6 @@
 context:
   name: supabase-functions
-  version: "0.10.1"
+  version: "2.19.0"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/supabase_functions/supabase_functions-${{ version }}.tar.gz
-  sha256: 4779d33a1cc3d4aea567f586b16d8efdb7cddcd6b40ce367c5fb24288af3a4f1
+  sha256: 28094a216eb89ad1bfaf37e9d05710766901c96e81e258349bb371414d074a02
 
 build:
   number: 0
@@ -28,7 +28,7 @@ requirements:
 tests:
   - python:
       imports:
-      - supabase_functions
+        - supabase_functions
       pip_check: true
       python_version: ${{ python_min }}.*
 
