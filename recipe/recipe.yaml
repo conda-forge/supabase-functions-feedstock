@@ -19,7 +19,7 @@ requirements:
   host:
     - python ${{ python_min }}.*
     - pip
-    - uv_build >=0.8.3,<0.9.0
+    - uv-build >=0.8.3,<0.9.0
   run:
     - python >=${{ python_min }}
     - httpx >=0.26,<0.29
