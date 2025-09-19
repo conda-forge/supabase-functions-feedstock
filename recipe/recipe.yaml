@@ -1,6 +1,6 @@
 context:
   name: supabase-functions
-  version: "0.10.1"
+  version: "2.19.0"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/supabase_functions/supabase_functions-${{ version }}.tar.gz
-  sha256: 4779d33a1cc3d4aea567f586b16d8efdb7cddcd6b40ce367c5fb24288af3a4f1
+  sha256: 28094a216eb89ad1bfaf37e9d05710766901c96e81e258349bb371414d074a02
 
 build:
   number: 0
@@ -19,7 +19,7 @@ requirements:
   host:
     - python ${{ python_min }}.*
     - pip
-    - poetry
+    - uv-build >=0.8.3,<0.9.0
   run:
     - python >=${{ python_min }}
     - httpx >=0.26,<0.29
@@ -28,7 +28,7 @@ requirements:
 tests:
   - python:
       imports:
-      - supabase_functions
+        - supabase_functions
       pip_check: true
       python_version: ${{ python_min }}.*
 
@@ -36,8 +36,8 @@ about:
   license: MIT
   license_file: LICENSE
   summary: Python client implementation for Supabase Functions
-  homepage: https://github.com/supabase/functions-py
-  repository: https://github.com/supabase/functions-py
+  homepage: https://github.com/supabase/supabase-py/tree/main/src/functions
+  repository: https://github.com/supabase/supabase-py/tree/main/src/functions
 
 extra:
   recipe-maintainers:
