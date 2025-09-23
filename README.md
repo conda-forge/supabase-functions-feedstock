@@ -3,13 +3,13 @@ About supabase-functions-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/supabase-functions-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/supabase/functions-py
+Home: https://github.com/supabase/supabase-py/tree/main/src/functions
 
 Package license: MIT
 
 Summary: Python client implementation for Supabase Functions
 
-Development: https://github.com/supabase/functions-py
+Development: https://github.com/supabase/supabase-py/tree/main/src/functions
 
 Current build status
 ====================
