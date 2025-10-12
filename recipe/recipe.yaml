@@ -24,6 +24,8 @@ requirements:
     - python >=${{ python_min }}
     - httpx >=0.26,<0.29
     - strenum >=0.4.15,<0.5.0
+    - yarl >=1.20.1
+
 
 tests:
   - python:
