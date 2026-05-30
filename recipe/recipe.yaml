@@ -1,6 +1,6 @@
 context:
   name: supabase-functions
-  version: "2.30.0"
+  version: "2.30.1"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/supabase_functions/supabase_functions-${{ version }}.tar.gz
-  sha256: 025acfd25f1c000ba43d0f7b8e366b0d2e9dfc784b842528e21973eb33006113
+  sha256: c09f8b46d3cf85713e2d8bf879dd77905ceb1d73508dbc404cc35cb36e75fb42
 
 build:
   number: 0
